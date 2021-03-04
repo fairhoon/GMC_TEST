@@ -324,6 +324,12 @@ view: ga_sessions {
     group_item_label: "Visits"
   }
 
+  measure: visits_sum {
+    description: "Sum of Visits"
+    type: sum
+    sql: ${totals__visits} ;;
+  }
+
   dimension: traffic_source__ad_content {
     type: string
     sql: ${TABLE}.trafficSource.adContent ;;
