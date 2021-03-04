@@ -30,6 +30,8 @@ view: display_summary {
 
 
 
+
+
   measure: visits_sum {
    description: "Sum of Visits"
    type: sum
