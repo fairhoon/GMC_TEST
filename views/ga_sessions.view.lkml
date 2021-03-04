@@ -317,17 +317,11 @@ view: ga_sessions {
     group_item_label: "Unique Screenviews"
   }
 
-  dimension: totals__visits {
-    type: number
+  measure: totals__visits {
+    type: sum
     sql: ${TABLE}.totals.visits ;;
     group_label: "Totals"
     group_item_label: "Visits"
-  }
-
-  measure: visits_sum {
-    description: "Sum of Visits"
-    type: sum
-    sql: ${totals__visits} ;;
   }
 
   dimension: traffic_source__ad_content {
