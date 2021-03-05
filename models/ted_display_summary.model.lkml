@@ -8,6 +8,7 @@ datagroup: ted_display_summary_default_datagroup {
   max_cache_age: "1 hour"
 }
 
+
 persist_with: ted_display_summary_default_datagroup
 
 explore: display_summary {}
