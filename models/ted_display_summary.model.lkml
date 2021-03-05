@@ -10,6 +10,8 @@ datagroup: ted_display_summary_default_datagroup {
 
 persist_with: ted_display_summary_default_datagroup
 
+explore: display_summary {}
+
 explore: ga_sessions {
   join: ga_sessions__hits {
     view_label: "Ga Sessions: Hits"
