@@ -7,6 +7,11 @@ view: display_summary {
     sql: ${TABLE}.date ;;
   }
 
+  dimension: date_formated {
+    type: date
+    sql: to_date${date} ;;
+  }
+
   dimension: totals__visits {
     type: number
     sql: ${TABLE}.totals.visits ;;
