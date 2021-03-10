@@ -22,6 +22,12 @@ view: ga_sessions {
     sql: ${TABLE}.date ;;
   }
 
+  dimension: date_formatted {
+    type: string
+    sql: to_date(${TABLE}.date) ;;
+  }
+
+
   dimension: device__browser {
     type: string
     sql: ${TABLE}.device.browser ;;
