@@ -9,7 +9,7 @@ view: display_summary {
 
   dimension: date_formated {
     type: date
-    sql: to_date${date} ;;
+    sql: to_date${TABLE}.date ;;
   }
 
   dimension: totals__visits {
