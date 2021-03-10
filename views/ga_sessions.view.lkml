@@ -23,7 +23,7 @@ view: ga_sessions {
   }
 
   dimension: date_formatted {
-    type: date
+    type: date_time
     sql: PARSE_DATETIME("%Y%m%d", ${TABLE}.date) ;;
   }
 
