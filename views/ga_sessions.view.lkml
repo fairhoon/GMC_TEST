@@ -24,9 +24,8 @@ view: ga_sessions {
 
   dimension: date_formatted {
     type: string
-    sql: to_date(${TABLE}.date) ;;
+    sql: PARSE_DATE("%Y%m%d", ${TABLE}.date) ;;
   }
-
 
   dimension: device__browser {
     type: string
