@@ -19,6 +19,7 @@ view: ga_sessions {
 
   dimension: date {
     type: string
+    hidden: yes
     sql: ${TABLE}.date ;;
   }
 
